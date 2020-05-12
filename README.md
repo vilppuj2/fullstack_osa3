@@ -5,3 +5,6 @@ Juuso Vilppula
 
 Puhelinluettelo - Heroku:
 https://young-taiga-07495.herokuapp.com
+
+Puhelinluettelo - Frontend:
+https://github.com/vilppuj2/fullstack/tree/master/osa2/puhelinluettelo
