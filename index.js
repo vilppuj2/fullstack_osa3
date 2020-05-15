@@ -85,6 +85,17 @@ app.post('/api/persons', (request, response) => {
       error: 'number missing' 
     })
   }
+
+  const person = new Person({
+    name: body.name,
+    number: body.number,
+  })
+
+  person.save().then(savedPerson => {
+    response.json(savedPerson.toJSON())
+  })
+  
+  /*
   if (persons.find(person => person.name === body.name)) {
     return response.status(400).json({
       error: 'name must be unique'
@@ -100,6 +111,7 @@ app.post('/api/persons', (request, response) => {
   persons = persons.concat(person)
 
   response.json(person)
+  */
 })
 
 const PORT = process.env.PORT
